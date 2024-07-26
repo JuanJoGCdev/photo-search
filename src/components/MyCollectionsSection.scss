@@ -1,0 +1,26 @@
+@import "../scss/abstracts/mixins";
+
+.myCollectionsSectionContainer {
+  display: block;
+  width: 85vw;
+  height: 183px;
+  overflow: hidden;
+  margin-left: 30px;
+  @include respond-to(mobile) {
+  width: 100vw;
+  margin: 15px ;
+ 
+  }
+}
+.myCollectionsSectionTitle {
+  font-family: var(--font-kalam);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.32px;
+}
+
+.myCollections {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}

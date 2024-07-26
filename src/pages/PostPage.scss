@@ -1,0 +1,41 @@
+@import "../scss/abstracts/mixins";
+
+.postPageContainer{
+  background-color: #f4dfca;
+  
+ 
+
+}
+.titlePagePost {
+  font-family: var(--font-kalam);
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.32px;
+  text-align: left;
+  margin: 25px 40px;
+
+}
+.postPageBody{
+  display: flex;
+  
+  @include respond-to(mobile) {
+  }
+
+}
+.postPageContent{
+  width: 75vw;
+  margin: 80px 0 0 70px;
+
+  @include respond-to(mobile) {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+.posts{
+  margin-left: 20%;
+  @include respond-to(mobile) {
+    margin-left: 0%;
+  }
+}

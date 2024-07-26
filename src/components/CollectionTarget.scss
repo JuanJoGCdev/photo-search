@@ -1,0 +1,23 @@
+.CollectionContainer{
+    margin: 5px 5px 0 0 ;
+
+    cursor: pointer;
+
+}
+
+.CollectionTargetImg{
+    width: 102px;
+    height: 102px;
+    border-radius: 10px;
+    object-fit: cover;
+   
+}
+.CollectionTargetName{
+    font-family: var(--font-kalam);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.13px;
+    text-align: left;
+    margin: 0;
+    
+}

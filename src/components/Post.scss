@@ -1,0 +1,71 @@
+@import "../scss/abstracts/mixins";
+.postContainer {
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.postHeader {
+  position: relative;
+}
+
+.postInfo {
+  display: flex;
+}
+
+.postInfoSection {
+  margin-top: 10px;
+}
+
+.postInfoContainer {
+  display: inline-flex;
+}
+
+.postOptions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.postInfoImg {
+  margin: 15px;
+  width: 57px;
+  height: 57px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.postInfoName {
+  font-family: var(--font-kalam);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15.94px;
+}
+
+.postInfoInfoCreate {
+  font-family: var(--font-kalam);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12.75px;
+  text-align: left;
+}
+
+.postInfoDescripcion {
+  font-family: var(--font-kalam);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.94px;
+  text-align: left;
+  color: #3a3636;
+  margin: 0 15px;
+}
+
+.postImg {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  margin-bottom: -5px;
+  @include respond-to(mobile) {
+    width: 100vw;
+  }
+}

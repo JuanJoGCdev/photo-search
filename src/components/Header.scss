@@ -1,0 +1,47 @@
+@import "../scss/abstracts/mixins";
+
+.headerContainer {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+  width: 100vw;
+    @include respond-to(mobile) {
+      position: relative;
+
+    }
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  margin: 13px 15px;
+
+  img {
+    width: 30px;
+  }
+}
+
+.headerMenuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15px; 
+}
+
+.headerMenu {
+  width: 20px;
+  height: 20px;
+}
+
+.titleHeader {
+  margin-left: 14px;
+  color: #ab7e57;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+}
