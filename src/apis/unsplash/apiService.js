@@ -1,5 +1,5 @@
 const API_URL = 'https://api.unsplash.com/photos/';
-const API_KEY = 'client_id=RgHpLuI4EC3HqFwe-tMxHbXXQu2lgt1GSqnoRMNgXj8';
+const API_KEY = 'client_id=2RwjvTe7xUWPW0J2xqHexH3RTaAoSxF5ctViQSLsBm0';
 
 const fetchData = async (endpoint = '') => {
     try {
