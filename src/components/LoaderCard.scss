@@ -1,0 +1,31 @@
+.card {
+  width: 18rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.271);
+}
+
+.card__skeleton {
+  background-image: linear-gradient(
+    90deg,
+    #f8d1a665 0px,
+    rgb(232, 206, 179) 40px,
+    #cccccc25 80px
+  );
+  background-size: 300%;
+  background-position: 100% 0;
+  border-radius: inherit;
+  animation: shimmer 1.5s infinite;
+}
+
+
+.card__description {
+  height: 260px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
+  }
+}
