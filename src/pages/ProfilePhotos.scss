@@ -1,0 +1,30 @@
+@import "../scss/abstracts/mixins";
+
+
+.profilePhotosContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .profilePhotos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; // Espacio entre las tarjetas
+    justify-content: center;
+    margin-left: 3%;
+  }
+  
+  /* Media queries para ajustar el diseño según el tamaño de la pantalla */
+  @include respond-to(mobile) {
+    .profilePhotos {
+      justify-content: space-between;
+    }
+  }
+  
+ 

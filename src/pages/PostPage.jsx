@@ -4,7 +4,7 @@ import MenuBar from "../components/MenuBar";
 import MyCollectionsSection from "../components/MyCollectionsSection";
 import "./PostPage.scss";
 import Post from "../components/Post";
-import fetchData from "../apis/unsplash/apiService";
+import {fetchData} from "../apis/unsplash/apiService";
 
 const PostPage = () => {
   const [imgs, setImgs] = useState([]);

@@ -1,7 +1,7 @@
 // src/hooks/useCollections.js
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import fetchData from '../apis/unsplash/apiService';
+import {fetchData} from '../apis/unsplash/apiService';
 import { addCollections } from '../redux/actions/collectionsActions';
 
 // Datos de las colecciones

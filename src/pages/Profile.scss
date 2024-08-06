@@ -1,0 +1,38 @@
+@import "../scss/abstracts/mixins";
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; // Asegura que el contenedor principal ocupe al menos toda la altura visible
+  overflow: auto; // Permite el scroll vertical si es necesario
+  overflow-x: hidden;
+  @include respond-to(mobile) {
+    height: 200vh;  }
+ 
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 935px;
+  padding: 20px;
+
+  @include respond-to(mobile) {
+    padding: 10px;
+  }
+}
+
+.profile-user-info {
+  width: 100%;
+  margin-top: -20px;
+  margin-left: -60px;
+}
+
+.profile-user-photos {
+  background-color: white;
+  width: 100%;
+  flex-grow: 1; // Permite que este contenedor crezca y ocupe el espacio disponible
+}

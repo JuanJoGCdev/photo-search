@@ -1,0 +1,36 @@
+/* Estilo para ocultar el botón de cerrar del InfoWindow */
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+/* Estilos personalizados para el InfoWindow */
+.info-window-container {
+ height: 10px;
+}
+.info-window {
+  text-align: center;
+  padding: 10px;
+  background-color: #b88e69;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 5px; /* Cambia el radio de los bordes aquí */
+  overflow: hidden;
+  width: 100px; /* Ancho fijo para la ventana */
+}
+
+.info-window h3 {
+  margin: 0;
+  font-size: 16px; /* Ajusta el tamaño del texto */
+}
+
+.info-window img {
+  width: 70px; /* Cambia el tamaño de la imagen */
+  height: 70px;
+    border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.info-window h4 {
+  margin: 0;
+  color: #323232;
+  font-size: 14px; /* Ajusta el tamaño del texto */
+}

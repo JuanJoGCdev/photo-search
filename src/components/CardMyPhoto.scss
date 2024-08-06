@@ -1,0 +1,52 @@
+@import "../scss/abstracts/mixins";
+
+.cardMyPhoto {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #bababa68;
+  margin-bottom: 10px;
+}
+
+.cardMyPhotoImg {
+  margin: 0 30px;
+
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 30px;
+  }
+
+  @include respond-to(mobile) {
+    margin: 0 10px;
+  }
+}
+
+.cardMyPhotoName {
+  margin-top: -20px;
+
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; // Ajusta este valor según tu diseño
+  }
+}
+
+.cardMyPhotoStatictis {
+  display: flex;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+.cardMyPhotoButtons {
+  margin: 0 20px;
+  display: flex;
+
+  @include respond-to(mobile) {
+    margin: 0 15px;
+  }
+}
+
+.cardMyPhotoContent {
+  margin-bottom: 20px;
+}

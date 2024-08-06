@@ -1,0 +1,37 @@
+@import "../scss/abstracts/mixins";
+
+body {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.locationContainer {
+  background-color: #f4dfca;
+  display: flex;
+  height: 100vh; // Asegura que el contenedor principal ocupe toda la altura visible
+  
+  @include respond-to(mobile) {
+    flex-direction: column;
+  }
+}
+
+.locationBody {
+  display: flex;
+  flex: 1; // Permite que el contenido ocupe el espacio disponible
+  
+  @include respond-to(mobile) {
+    flex-direction: column;
+    height: 100%; // Ajusta la altura para el contenido en pantallas pequeñas
+  }
+}
+
+.locationContent {
+  flex: 1; // Permite que el contenido ocupe el espacio disponible
+  overflow: hidden; // Asegura que no haya scrollbar en el contenido
+
+  @include respond-to(mobile) {
+    margin: 0 0 120px 0; // Ajusta los márgenes para pantallas pequeñas
+    height: 100%; // Ajusta la altura del contenido en pantallas pequeñas
+  }
+}
